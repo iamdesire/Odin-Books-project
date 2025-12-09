@@ -4,7 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODIN |Books projects </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body{
+            background-color: #f0f3f8;
+        }
+
+        h1{
+            margin-left: 45%;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            font-family: "Montserrat Alternates", sans-serif;
+            color: rgb(56, 55, 55);
+        }
+
+        form{
+            background-color: white;
+            width: 40vw;
+            height: 70vh;
+            border: 1px solid white;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        form label{
+            font-size: 26px;
+            font-weight: 300;
+            font-family: "Signika Negative", sans-serif;
+            margin: 10px;
+            color: rgb(78, 78, 78);
+        }
+
+        form input{
+            margin: 10px;
+            height: 55px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid rgb(225, 224, 224);
+            padding: 5px;
+            font-family: "Montserrat Alternates", sans-serif;
+        }
+        form input:focus{
+            border:  1px solid #0757cf; 
+        }
+        form .submit{
+           background-color: #0757cf;
+           
+           color: white;
+           font-weight: 500;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -44,6 +110,22 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
         Add book
     </button >
+    <dialog>
+        <form action="" method="post">
+            <label for="">Title</label>
+            <input type="text" placeholder="Enter the book title">
+
+            <label for="">Author</label>
+            <input type="text" placeholder="Author">
+
+            <label for="">Number of pages</label>
+            <input type="number" placeholder="Number of pages">
+
+            <input type="submit" value="Enregistrer" class="submit">
+        </form>
+    </dialog>
+   
+
     <script src="main.js">
 
     </script>
