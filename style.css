@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    @font-face {
+        font-family: 'Ubuntu';
+        src: url('./assets/fonts/Ubuntu-Regular.ttf') format('woff2');
+            
+        font-weight: 400;
+        
+    }
+
+h1{
+    margin-left: 9vw;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+  }
+
+button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    border: 1px solid #0757cf;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-family: 'Ubuntu', 'Serif';
+    font-weight: 500;
+    font-family: "Ubuntu";
+}
+
+
+.book{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: relative;
+}
+.btnstatuts{
+    position: absolute;
+    bottom: 2vh;
+    left: 3vw;
+}
+
+.delete{
+    position: absolute;
+    bottom: 2vh;
+    right: 3vw;
+    background-color: red;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.addbtn{
+    background-color: #0757cf;
+    border: 1px solid #0757cf;
+    margin-left: 9vw;
+
+  }
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+
+  .books {
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  .book{
+    width: 80vw;
+    height: 35vh;
+    background-color: white;
+    border-radius: 8px;
+    margin: 3vh 10vw 4vh 9vw;
+  }
+
+
+}
+
+/* Tablette (768px à 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+  .books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.book{
+
+    width: 30vw;
+    height: 35vh;
+    background-color: white;
+    border-radius: 8px;
+    margin: 3vh 10vw 4vh 9vw;
+    border: 1px solid black;
+
+  }
+}
+
+
+@media (min-width: 1024px) {
+    .books {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+  }
+  h1{
+    margin-left: 4vw;
+  }
+  .book {
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 25px 25px 20px 4vw;
+    border: 1px solid black;
+
+  }
+  .btnstatuts{
+    bottom: 10px;
+    left: 10px;
+}
+
+.delete{
+    bottom: 10px;
+    right: 10px;
+
+}
+  .addbtn{
+    margin-left: 4vw;
+  }
+}
