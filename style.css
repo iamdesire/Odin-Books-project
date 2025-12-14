@@ -1,19 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-    @font-face {
-        font-family: 'Ubuntu';
-        src: url('./assets/fonts/Ubuntu-Regular.ttf') format('woff2');
-            
-        font-weight: 400;
-        
+     
+   
+
+    dialog{
+      width: 42%;
+      height: 42vh;
+      margin: auto;
+      border: none;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      margin: 2vh 2% 2vh 2%;
+
+    }
+
+    form label{
+      margin-top: 5px;
+      margin-bottom: 6px;
+      font-size: 15px;
+      font-family: 'ubuntu', sans-serif;
+      color:rgba(104, 103, 103, 0.995)
+    }
+    form input{
+      outline: none;
+      padding: 5px;
+      
+    }
+    form input:focus{
+      border: 1px solid #2aa0ef;
+      border-radius: 6px;
+    }
+    form .submit{
+      padding: 5px;
+      background-color: #2aa0ef;
+      outline: none;
+      border: 1px solid #2aa0ef;
+      border-radius: 4px;
+      font-family: "Share Tech", sans-serif;
+      color: white;
+    }
+    form .choix{
+      color:#2aa0ef;
+      accent-color: #2aa0ef;
+      border: 1px solid #2aa0ef;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-left: 5px;
     }
 
 h1{
     margin-left: 9vw;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-family: "Share Tech", sans-serif;
   }
 
 button{
@@ -48,13 +96,29 @@ button{
     background-color: red;
     border: 1px solid red;
     padding: 5px;
+    font-family: "Share Tech", sans-serif;
 }
 
 .addbtn{
-    background-color: #0757cf;
-    border: 1px solid #0757cf;
+    background-color: #2aa0ef;
+    border: 1px solid #2aa0ef;
     margin-left: 9vw;
+    margin-top: 3vh;
 
+  }
+  h4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(17, 143, 211);
+    font-family: "Share Tech", sans-serif;
+  }
+  h6{
+    margin-left: 7vw;
+    margin-top: 10px;
+    color: rgb(117, 117, 118);
+    font-size: 28px;
+    font-family: "Ubuntu", sans-serif;
   }
 
 /* Mobile (jusqu'à 767px) */
@@ -95,6 +159,10 @@ button{
     border: 1px solid black;
 
   }
+  .addbtn{
+    margin-left: 4vw;
+    margin-top: 5vh;
+  }
 }
 
 
@@ -128,5 +196,6 @@ button{
 }
   .addbtn{
     margin-left: 4vw;
+    margin-top: 5vh;
   }
 }
