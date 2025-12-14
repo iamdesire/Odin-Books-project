@@ -53,11 +53,11 @@ function addToLibrary(){
     const tit = document.createElement('h4');
     tit.textContent = title;
     const at = document.createElement('h6')
-    at.textContent = aut
+    at.textContent = `Auteur: ${aut}`
     const nbr = document.createElement('h6') 
-    nbr.textContent = page
+    nbr.textContent = `Nombre de pages: ${page}`
     const rd = document.createElement('h6') 
-    rd.textContent = status
+    rd.textContent = `Avoir lu: ${status}`
 
     // Ajouter tous les <h*> dans la div
     divBook.appendChild(tit);
